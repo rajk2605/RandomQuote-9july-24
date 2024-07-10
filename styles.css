@@ -1,0 +1,150 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Playfair Display", serif;
+
+}
+
+body{
+	background-color: skyBlue;
+}
+
+.quote-box{
+	background-color:#fff;
+	width: 700px;
+	//height: 350px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform : translate(-50%, -50%);
+	padding : 40px;
+	border-radius: 15px;
+	text-align : center;
+	box-shadow: 3px 3px 3px 3px black;
+	
+}
+
+.quote-box h2 {
+	font-size: 32px;
+	margin-bottom: 40px;
+	position: relative;
+}
+
+
+.quote-box h2::after{
+	content:'';
+	width: 80px;
+	height: 3px;
+	border-radius: 3px;
+	background: darkblue;
+	position : absolute;
+	bottom: -10px;
+	//top: 45%;
+	left: 45%;
+	tranform : translateX(-50%);
+}
+
+.quote-box quote{
+	font-size: 26px;
+	content:''
+	//min-height : 110px;
+}
+
+//.quote-box quote::before,.quote-box quote::after {
+	content:'';
+	
+}
+
+.quote-box author{
+	font-size: 20px;
+	font-weight: bold;
+	font-family: Cambria;
+	display: block;
+	margin-top : 40px;
+	float: center;
+	position: relative;
+}
+
+
+//.quote-box author::before{
+	content: '';
+	width: 20px;
+	height:2px;
+	top: 50%;
+	left: -30px;
+	background: darkblue;
+	position: absolute;
+}
+
+
+.quote-box div{
+	width:100%;
+	margin-top: 50px;
+	display: flex;
+	justify-content : center;
+	 
+}
+
+.quote-box button{
+   position: relative;
+  background-color: darkblue;
+  border-radius: 40px;
+  font-size: 20px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 150px;
+  text-align: center;
+  -webkit-transition-duration: 0.2s; /* Safari */
+  transition-duration: 0.2s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.quote-box button:after {
+  content: "";
+  background: #90EE90;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.4s
+}
+
+.quote-box button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
